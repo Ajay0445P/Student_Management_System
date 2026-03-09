@@ -266,3 +266,86 @@ td i:hover{
 .search-table{
     padding-top: 10px;
 }
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 900px){
+
+.container{
+flex-direction:column;
+}
+
+/* sidebar becomes top menu */
+
+.nav{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:15px;
+}
+
+.nav div{
+margin:10px 15px;
+}
+
+/* center dashboard blocks */
+
+.content{
+justify-content:center;
+}
+
+/* cards slightly smaller */
+
+.dashboard-block,
+.dashboard-block-1{
+width:45%;
+}
+
+}
+
+/* ========================= */
+/* MOBILE PHONES */
+/* ========================= */
+
+@media (max-width: 600px){
+
+.heading{
+font-size:24px;
+text-align:center;
+}
+
+/* stack cards vertically */
+
+.dashboard-block,
+.dashboard-block-1{
+width:90%;
+}
+
+/* reduce padding */
+
+.view_student{
+padding:20px;
+}
+
+}
+
+/* ========================= */
+/* LOGIN PAGE FIX */
+/* ========================= */
+
+@media (min-width: 900px){
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:70vh;
+}
+
+.login-box{
+width:350px;
+}
+
+}
