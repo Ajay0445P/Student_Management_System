@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <title>Add_Student</title>
+</head>
+
+<body>
+    <p class="heading">Student Managemnt System</p>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <i class="ph-fill ph-house"></i>
+                <a href="/dashboard">Dashboard</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/view_student">View Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/search_student">Search Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-power"></i>
+                <a href="/">Logout</a><br>
+            </div>
+        </div>
+        <div class="main">
+            <form method="post">
+                <label>Name</label>
+                <input type="text" name="studentName" id="" required>
+                <br><br>
+                <label>Course</label>
+                <input type="text" name="studentCourse" required>
+                <br><br>
+                <label>Enrollment</label>
+                <input type="text" name="enrollment" id="" required>
+                <br><br>
+                <label>Phone</label>
+                <input type="text" name="studentPhone" maxlength="10" required>
+                <br><br>
+                <div class="button">
+                    <button type="submit" class="Save">Save</button>
+                    <button type="reset" class="Reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

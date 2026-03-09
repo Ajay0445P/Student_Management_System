@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <title>Update Student</title>
+</head>
+
+<body>
+    <p class="heading">Student Managemnt System</p>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <i class="ph-fill ph-house"></i>
+                <a href="/dashboard">Dashboard</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/view_student">View Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/search_student">Search Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-power"></i>
+                <a href="/">Logout</a><br>
+            </div>
+        </div>
+        <div class="main">
+            <div class="head">
+                <div>
+                    Update Student
+                </div>
+            </div>
+            <hr>
+            <form method="POST">
+
+                <input type="hidden" name="id" value="{{ student[0] }}">
+
+                <label>Name</label>
+                <input type="text" name="studentName" value="{{ student[1] }}">
+
+                <br><br>
+
+                <label>Course</label>
+                <input type="text" name="studentCourse" value="{{ student[2] }}">
+
+                <br><br>
+
+                <label>Marks</label>
+                <input type="text" name="studentMarks" value="{{ student[3] }}">
+
+                <br><br>
+
+                <label>Phone</label>
+                <input type="text" name="studentPhone" value="{{ student[4] }}">
+
+                <br><br>
+
+                <div class="button">
+                    <button type="submit" class="Save">Update</button>
+                    <a href="/view_student"><button type="button" class="Reset">Cancel</button></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

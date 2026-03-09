@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5e5e9;
+}
+
+.heading {
+    background-color: #2c6ebe;
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    font-size: 30px;
+}
+
+.main {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    width: 50vh;
+    height: 3vh;
+    border: 2px solid #e5e5e9;
+}
+
+a {
+    color: #586d8e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2c6ebe;
+}
+
+.nav {
+    background-color: #ededf1;
+    color: #586d8e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vh;
+    padding: 50px;
+    gap: 40px;
+}
+
+.Save {
+    background-color: #2c6ebe;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Save:hover {
+    background-color: #89b6ec;
+    padding: 12px;
+    color: #505050;
+    box-shadow: 2px 2px rgb(86, 86, 86);
+    transition: ease 0.5s;
+}
+
+.Reset {
+    background-color: #8a9ab4;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Reset:hover {
+    background-color: #c6c6c6;
+    padding: 12px;
+    box-shadow: 2px 2px rgb(86, 86, 86);
+    color: black;
+    transition: ease 0.5s;
+}
+
+.login-container {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
+    max-height: 100vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    gap: 30px;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-heading {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.login-input {
+    margin: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #2c6ebe;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #90c2ff;
+    color: rgb(108, 108, 108);
+    transition: ease 0.5s;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon {
+    color: #505050;
+    background-color: #dae2f9;
+    padding: 5px;
+    height: 20px;
+}
+
+.login-copy {
+    background-color: #8a9ab4;
+    width: 100vh;
+    max-width: 100vh;
+    height: 5vh;
+    text-align: center;
+    padding: 5px;
+    align-content: center;
+}
+
+.view_student {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+}
+
+hr {
+    border: 2px solid #505050;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 25px;
+    gap: 50px;
+}
+
+.dashboard-block-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #89b6ec;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dashboard-icon {
+    color: #2c6ebe;
+    font-size: 40px;
+}
+
+.dashboard-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+}
+.login-btn a{
+    color: white;
+}
+.login-btn a:hover{
+    color: #505050;
+}
+
+td{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+td a{
+    color: rgb(60, 145, 60);
+}
+td i{
+    color: black;
+}
+td i:hover{
+    text-decoration: none;
+}
+#delete-btn{
+    color: red;
+}
+.search-form{
+    display: flex;
+    gap: 10px;
+}
+.search-bar{
+    align-items: center;
+    padding: 10px;
+}
+.search-btn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.search-table{
+    padding-top: 10px;
+}

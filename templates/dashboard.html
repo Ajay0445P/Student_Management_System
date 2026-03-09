@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <title>dashboard</title>
+</head>
+
+<body>
+    <p class="heading">Student Managemnt System</p>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <i class="ph-fill ph-house"></i>
+                <a href="/dashboard">Dashboard</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/view_student">View Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/search_student">Search Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-power"></i>
+                <a href="/admin_register">Admin Register</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-power"></i>
+                <a href="/">Logout</a><br>
+            </div>
+        </div>
+        <div class="view_student">
+            <div class="head">
+                <div>
+                    <p>Welcome To The Student Managemnt System!
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="dashboard-block-1">
+                    <i class="ph-fill ph-graduation-cap dashboard-icon"></i>
+                    <p>Total Students:</p>
+                    <p>{{total}}</p>
+                </div>
+                <div class="dashboard-block">
+                    <i class="ph-fill ph-plus dashboard-icon"></i>
+                    <p> + Add Students</p>
+                    <button class="login-btn"><a href="/add_student">Add Student</a></button>
+                </div>
+                <div class="dashboard-block">
+                    <i class="ph-fill ph-list-dashes dashboard-icon"></i>
+                    <p>View Students</p>
+                    <button class="login-btn"><a href="/view_student">View Student</a></button>
+                </div>
+                <div class="dashboard-block">
+                    <i class="ph-fill ph-magnifying-glass dashboard-icon"></i>
+                    <p> Search Students</p>
+                    <button class="login-btn"><a href="/search_student">Search Student</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

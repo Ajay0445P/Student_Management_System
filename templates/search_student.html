@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <title>Search Student</title>
+</head>
+
+<body>
+    <p class="heading">Student Managemnt System</p>
+    <div class="container">
+        <div class="nav">
+            <div>
+                <i class="ph-fill ph-house"></i>
+                <a href="/dashboard">Dashboard</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/view_student">View Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-magnifying-glass"></i>
+                <a href="/search_student">Search Student</a><br>
+            </div>
+            <div>
+                <i class="ph-fill ph-power"></i>
+                <a href="/">Logout</a><br>
+            </div>
+        </div>
+        <div class="view_student">
+            <div class="head">
+                <div>
+                    <h2>Student List</h2>
+
+                    <form class="search-form" method="post">
+                        <label>Search</label>
+                        <input class="search-bar" type="text" name="enrollment-number" placeholder="Enter Student's Enrollment Number">
+                        <br>
+                        <button class="Save" type="submit">Search</button>
+                    </form>
+                    <div class="search-table">
+                        <table border="1">
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Enrollment</th>
+                                <th>Phone</th>
+                                <th>Update</th>
+                                <th>Delete</th>
+                            </tr>
+
+                            {% for student in students %}
+
+                            <tr>
+
+                                <td>{{student[0]}}</td>
+                                <td>{{student[1]}}</td>
+                                <td>{{student[2]}}</td>
+                                <td>{{student[3]}}</td>
+                                <td>{{student[4]}}</td>
+
+                                <td><i class="ph ph-pencil"></i>
+                                    <a href="/update_student/{{ student[0] }}">Update</a>
+                                </td>
+                                <td><i class="ph ph-trash"></i>
+                                    <a id="delete-btn" href="/delete_student/{{ student[0] }}">Delete</a>
+                                </td>
+
+                            </tr>
+
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <button class="login-btn"><a href="/add_student">Add Student</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
